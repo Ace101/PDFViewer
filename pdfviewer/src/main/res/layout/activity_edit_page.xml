@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/id_edit_page_toolbar"
+        layout="@layout/layout_toolbar"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_edit_page_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_edit_page_toolbar"
+        android:layout_above="@+id/id_edit_page_blank"
+        android:background="@color/primary_white_gray"
+        android:cacheColorHint="@null"
+        android:padding="@dimen/qb_px_2"/>
+
+    <View
+        android:id="@+id/id_edit_page_blank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_56"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:id="@+id/id_edit_page_function"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_56"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/reader_tools_button_normal"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/id_edit_page_function_rotate"
+            style="@style/button_page_edit_tool"
+            android:drawableTop="@drawable/ic_rotate"
+            android:textAllCaps="false"
+            android:text="@string/edit_page_function_rotate"/>
+        <Button
+            android:id="@+id/id_edit_page_function_split"
+            style="@style/button_page_edit_tool"
+            android:drawableTop="@drawable/view_ic_split"
+            android:textAllCaps="false"
+            android:text="@string/edit_page_function_extract"/>
+        <Button
+            android:id="@+id/id_edit_page_function_delete"
+            style="@style/button_page_edit_tool"
+            android:drawableTop="@drawable/ic_delete"
+            android:textAllCaps="false"
+            android:text="@string/edit_page_function_delete"/>
+    </LinearLayout>
+
+</RelativeLayout>

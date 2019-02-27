@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/id_item_signList_imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/id_item_signList_select">
+        <ImageView
+            android:id="@+id/id_item_signList_iv"
+            android:layout_width="@dimen/qb_px_172"
+            android:layout_height="@dimen/qb_px_90"
+            android:src="@drawable/stamp_custom_dis"
+            android:layout_marginTop="@dimen/qb_px_1"
+            android:layout_marginBottom="@dimen/qb_px_1"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/id_item_signList_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/qb_px_15"
+        android:button="@drawable/checkbox_select"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:layout_marginLeft="@dimen/qb_px_20"
+        android:layout_marginRight="@dimen/qb_px_20"
+        android:layout_below="@+id/id_item_signList_imageLayout"
+        android:background="#1e000000"/>
+
+</RelativeLayout>

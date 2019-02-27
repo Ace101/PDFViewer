@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:background="@color/menu_border_color"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/qb_px_10"
+        android:background="@color/menu_gray_bg">
+
+        <com.kdanmobile.pdfviewer.screenui.reader.widget.SineCurveView
+            android:id="@+id/id_markerpen_pop_sineCurve"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_60"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_markerpen_pop_color_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/qb_px_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/qb_px_0"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:padding="@dimen/qb_px_6"
+                android:src="@drawable/draw_ic_opacity"/>
+
+            <SeekBar
+                android:id="@+id/id_markerpen_pop_alpha_bar"
+                style="@style/popup_window_seek_bar" />
+
+            <TextView
+                android:id="@+id/id_markerpen_pop_alpha_value"
+                android:textSize="@dimen/qb_px_10"
+                android:layout_width="@dimen/qb_px_0"
+                android:layout_weight="1"
+                android:textColor="@color/page_indicator"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="0%"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_markerpen_pop_size_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/qb_px_0"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:padding="@dimen/qb_px_6"
+                android:src="@drawable/draw_ic_line_weight"/>
+
+            <SeekBar
+                android:id="@+id/id_markerpen_pop_size_bar"
+                style="@style/popup_window_seek_bar" />
+
+            <TextView
+                android:id="@+id/id_markerpen_pop_size_value"
+                android:layout_width="@dimen/qb_px_0"
+                android:layout_weight="1"
+                android:textSize="@dimen/qb_px_10"
+                android:textColor="@color/page_indicator"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_markerpen_pop_style_arrow_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/id_markerpen_pop_normal_pen_arrow"
+                    android:layout_width="@dimen/qb_px_10"
+                    android:layout_height="@dimen/qb_px_10"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/btn_bota_more"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/id_markerpen_pop_marker_pen_arrow"
+                    android:layout_width="@dimen/qb_px_10"
+                    android:layout_height="@dimen/qb_px_10"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/btn_bota_more"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_markerpen_pop_style_iv_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/id_markerpen_pop_normal_pen"
+                    android:layout_width="@dimen/qb_px_70"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/brush_c01"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/id_markerpen_pop_marker_pen"
+                    android:layout_width="@dimen/qb_px_70"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/brush_c02"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

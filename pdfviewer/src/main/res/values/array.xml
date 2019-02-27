@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="annotation_ink_images">
+        <item>@drawable/view_ic_draw_1</item>
+        <item>@drawable/view_ic_draw_2</item>
+        <item>@drawable/view_ic_draw_3</item>
+        <item>@drawable/view_ic_draw_4</item>
+        <item>@drawable/view_ic_draw_5</item>
+        <item>@drawable/view_ic_draw_6</item>
+        <item>@drawable/view_ic_draw_7</item>
+        <item>@drawable/view_ic_draw_8</item>
+        <item>@drawable/view_ic_draw_9</item>
+        <item>@drawable/view_ic_draw_10</item>
+        <item>@drawable/view_ic_draw_11</item>
+        <item>@drawable/view_ic_draw_12</item>
+        <item>@drawable/view_ic_draw_13</item>
+    </integer-array>
+</resources>

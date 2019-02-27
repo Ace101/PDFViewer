@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--
+        files-path             :  Context.getFilesDir()
+        cache-path             :  Context.getCacheDir()
+        external-path          :  Environment.getExternalStorageDirectory()
+        external-files-path    :  Context.getExternalFilesDir(null)
+        external-cache-path    :  Context.getExternalCacheDir()
+    -->
+
+    <files-path
+        name="pdf_pro_files"
+        path="."/>
+
+    <cache-path
+        name="pdf_pro_caches"
+        path="."/>
+
+    <external-path
+        name="pdf_pro_external_root"
+        path="."/>
+
+    <external-files-path
+        name="pdf_pro_external_files"
+        path="."/>
+
+    <external-cache-path
+        name="pdf_pro_external_cache"
+        path="."/>
+</paths>

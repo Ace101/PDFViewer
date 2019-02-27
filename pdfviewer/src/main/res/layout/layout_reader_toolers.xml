@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fadeScrollbars="false"
+    android:fadingEdge="none"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/id_reader_tool_pop_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/id_reader_tool_highlight_pop"
+                style="@style/textView_reader_tool_pop"
+                android:layout_marginStart="@dimen/qb_px_8"
+                android:text="@string/reader_tool_bar_pop_markup" />
+
+            <TextView
+                android:id="@+id/id_reader_tool_underline_pop"
+                style="@style/textView_reader_tool_pop"
+                android:layout_marginStart="@dimen/qb_px_75"
+                android:text="@string/reader_tool_bar_pop_markup" />
+
+            <TextView
+                android:id="@+id/id_reader_tool_strick_pop"
+                style="@style/textView_reader_tool_pop"
+                android:layout_marginStart="@dimen/qb_px_140"
+                android:text="@string/reader_tool_bar_pop_markup" />
+
+            <TextView
+                android:id="@+id/id_reader_tool_shape_pop"
+                style="@style/textView_reader_tool_pop"
+                android:layout_marginStart="@dimen/qb_px_270"
+                android:text="@string/reader_tool_bar_pop_shape" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/reader_tools_button_normal"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/id_reader_tool_pageEdit"
+                style="@style/imageView_reader_tool_relativeLayout">
+
+                <ImageView
+                    style="@style/imageView_reader_tool_imageView"
+                    android:src="@drawable/view_ic_pageedit" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_reader_tool_highlight"
+                style="@style/imageView_reader_tool_relativeLayout">
+
+                <View
+                    android:id="@+id/id_reader_tool_highlight_bg"
+                    android:layout_width="@dimen/qb_px_25"
+                    android:layout_height="@dimen/qb_px_25"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:layout_width="@dimen/qb_px_23"
+                    android:layout_height="@dimen/qb_px_23"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/view_ic_highlight" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_reader_tool_underline"
+                style="@style/imageView_reader_tool_relativeLayout">
+
+                <ImageView
+                    android:layout_width="@dimen/qb_px_25"
+                    android:layout_height="@dimen/qb_px_25"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/qb_px_13"
+                    android:src="@drawable/view_ic_underline" />
+
+                <View
+                    android:id="@+id/id_reader_tool_underline_bg"
+                    android:layout_width="@dimen/qb_px_19"
+                    android:layout_height="@dimen/qb_px_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/qb_px_34" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_reader_tool_strick"
+                style="@style/imageView_reader_tool_relativeLayout">
+
+                <ImageView
+                    android:layout_width="@dimen/qb_px_27"
+                    android:layout_height="@dimen/qb_px_27"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/qb_px_12"
+                    android:src="@drawable/view_ic_shanchuxian" />
+
+                <View
+                    android:id="@+id/id_reader_tool_strick_bg"
+                    android:layout_width="@dimen/qb_px_20"
+                    android:layout_height="@dimen/qb_px_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/qb_px_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_reader_tool_ink"
+                style="@style/imageView_reader_tool_relativeLayout">
+
+                <ImageView
+                    android:id="@+id/id_reader_tool_ink_iv"
+                    android:layout_width="@dimen/qb_px_26"
+                    android:layout_height="@dimen/qb_px_26"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/qb_px_15"
+                    android:src="@drawable/view_ic_draw_2" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_reader_tool_shape"
+                style="@style/imageView_reader_tool_relativeLayout">
+
+                <ImageView
+                    style="@style/imageView_reader_tool_imageView"
+                    android:src="@drawable/view_ic_xingzhuang" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_reader_tool_freeText"
+                style="@style/imageView_reader_tool_relativeLayout">
+
+                <ImageView
+                    style="@style/imageView_reader_tool_imageView"
+                    android:src="@drawable/view_ic_freetext" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_reader_tool_sign"
+                style="@style/imageView_reader_tool_relativeLayout">
+
+                <ImageView
+                    style="@style/imageView_reader_tool_imageView"
+                    android:src="@drawable/view_ic_sign" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_reader_tool_stamp"
+                style="@style/imageView_reader_tool_relativeLayout">
+
+                <ImageView
+                    style="@style/imageView_reader_tool_imageView"
+                    android:src="@drawable/view_ic_stamp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_reader_tool_link"
+                style="@style/imageView_reader_tool_relativeLayout">
+
+                <ImageView
+                    style="@style/imageView_reader_tool_imageView"
+                    android:src="@drawable/view_ic_link" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</HorizontalScrollView>

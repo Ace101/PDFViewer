@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myViewXmlns="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="@dimen/qb_px_150"
+        android:layout_height="@dimen/qb_px_55"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/qb_px_10"
+        android:background="@color/white_color"
+        android:gravity="center">
+        <com.kdanmobile.kmpdfkit.annotation.stamp.view.KMPDFStampTextView
+            android:id="@+id/id_item_textStamp_stampTextView"
+            myViewXmlns:max_Width="120"
+            myViewXmlns:max_TextSize="20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/d_item_textStamp_select"
+        android:layout_width="@dimen/qb_px_30"
+        android:layout_height="@dimen/qb_px_30"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/qb_px_10"
+        android:layout_marginEnd="@dimen/qb_px_8"
+        android:button="@drawable/checkbox_select"
+        android:gravity="top"/>
+
+</RelativeLayout>

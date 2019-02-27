@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/annot_menu_color" />
+
+    <item
+        android:title="@string/annot_menu_opacity" />
+
+    <item
+        android:title="@string/annot_menu_delete" />
+
+</menu>

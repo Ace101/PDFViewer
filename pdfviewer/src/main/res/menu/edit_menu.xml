@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/edit_menu_edit"
+        android:title="@string/context_menu_edit"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_edit_white"/>
+    <item
+        android:id="@+id/edit_menu_no_edit"
+        android:title="@string/context_menu_no_edit"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_edit_dis"/>
+    <item
+        android:id="@+id/edit_menu_unSelect"
+        android:title="@string/context_menu_edit"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_quanxuan_no_white"/>
+</menu>

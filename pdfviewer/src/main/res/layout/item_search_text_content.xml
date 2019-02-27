@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/qb_px_64">
+    <TextView
+        android:id="@+id/id_item_search_content_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_32"
+        android:maxLines="3"
+        android:minLines="3"
+        android:textColor="@color/search_result_text_color"
+        android:textSize="@dimen/qb_px_12"
+        android:layout_marginLeft="@dimen/qb_px_16"
+        android:layout_marginRight="@dimen/qb_px_16"
+        android:layout_marginTop="@dimen/qb_px_16"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:background="#1a000000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/qb_px_16"
+        android:layout_marginRight="@dimen/qb_px_16"/>
+
+</RelativeLayout>

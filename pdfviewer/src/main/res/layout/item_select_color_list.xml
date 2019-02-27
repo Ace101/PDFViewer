@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.kdanmobile.pdfviewer.screenui.reader.widget.SelectableCircleView
+        android:id="@+id/id_select_color_item_color"
+        android:layout_width="@dimen/qb_px_50"
+        android:clickable="true"
+        android:layout_height="@dimen/qb_px_50" />
+
+</LinearLayout>

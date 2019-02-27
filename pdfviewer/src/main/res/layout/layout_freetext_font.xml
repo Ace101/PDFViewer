@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_freeText_font_color_choose_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/menu_gray_bg"
+        android:padding="@dimen/qb_px_10"/>
+    <LinearLayout
+        android:id="@+id/id_freeText_font_alpha_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qb_px_10"
+        android:layout_marginBottom="@dimen/qb_px_10"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/qb_px_10"
+        android:paddingRight="@dimen/qb_px_10"
+        android:layout_below="@+id/id_freeText_font_color_choose_lv">
+
+        <ImageView
+            android:layout_width="@dimen/qb_px_0"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="@dimen/qb_px_6"
+            android:src="@drawable/draw_ic_opacity"/>
+
+        <SeekBar
+            android:id="@+id/id_freeText_font_alpha_bar"
+            style="@style/popup_window_seek_bar"/>
+
+        <TextView
+            android:id="@+id/id_freeText_font_alpha_value"
+            android:layout_width="0dp"
+            android:textColor="@color/page_indicator"
+            android:layout_weight="1"
+            android:textSize="@dimen/qb_px_10"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="0%"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/qb_px_10"
+        android:paddingRight="@dimen/qb_px_10"
+        android:layout_marginBottom="@dimen/qb_px_10"
+        android:layout_below="@id/id_freeText_font_alpha_layout">
+
+        <ImageView
+            android:layout_width="@dimen/qb_px_0"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="@dimen/qb_px_6"
+            android:src="@drawable/font_ic_size"/>
+
+        <SeekBar
+            android:id="@+id/id_freeText_font_size_bar"
+            style="@style/popup_window_seek_bar"/>
+
+        <TextView
+            android:id="@+id/id_freeText_font_size_value"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/page_indicator"
+            android:textSize="@dimen/qb_px_10"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

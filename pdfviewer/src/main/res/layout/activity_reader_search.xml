@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/id_reader_search_editText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_56"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/theme_color_cyan">
+
+        <ImageButton
+            android:id="@+id/id_reader_search_back"
+            android:layout_width="@dimen/qb_px_50"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back_white"
+            android:background="@color/theme_color_cyan"/>
+
+        <EditText
+            android:id="@+id/id_reader_search_content"
+            android:layout_width="@dimen/qb_px_265"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/qb_px_50"
+            android:background="@null"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="@color/white_color"
+            android:textColorHint="@color/tab_text_color"
+            android:maxLength="5"
+            android:textCursorDrawable="@drawable/cursor_color"/>
+
+        <ImageButton
+            android:id="@+id/reader_search_clean"
+            android:layout_width="@dimen/qb_px_50"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close_white"
+            android:background="@color/theme_color_cyan"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/id_reader_search_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/id_reader_search_editText"
+        style="@style/tab_selector"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_reader_search_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_reader_search_tab_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/id_reader_search_dis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_reader_search_tab_layout"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/id_reader_search_dis_iv"
+            android:layout_width="@dimen/qb_px_100"
+            android:layout_height="@dimen/qb_px_110"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_search_dis"/>
+
+        <TextView
+            android:id="@+id/id_reader_search_dis_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_reader_search_dis_iv"
+            android:layout_centerHorizontal="true"
+            android:text="@string/search_text_dis"
+            android:textSize="@dimen/qb_px_18"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/id_edit_sign_menu_rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_50"
+        android:background="@color/theme_color_cyan">
+
+        <ImageButton
+            android:id="@+id/id_edit_sign_back"
+            android:layout_width="@dimen/qb_px_50"
+            android:layout_height="@dimen/qb_px_30"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_back_white"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/id_edit_sign_back"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/qb_px_20"
+            android:layout_centerVertical="true"
+            android:text="@string/sign_edit_title"/>
+
+        <ImageButton
+            android:id="@+id/id_edit_sign_choosePhoto"
+            android:layout_width="@dimen/qb_px_50"
+            android:layout_height="@dimen/qb_px_50"
+            android:layout_toLeftOf="@+id/id_edit_sign_done"
+            android:layout_marginRight="@dimen/qb_px_10"
+            android:layout_centerVertical="true"
+            android:background="@color/theme_color_cyan"
+            android:src="@drawable/sign_ic_addpic_white"/>
+
+        <com.kdanmobile.pdfviewer.screenui.widget.SuperButton
+            android:id="@+id/id_edit_sign_done"
+            android:layout_width="@dimen/qb_px_70"
+            android:layout_height="@dimen/qb_px_30"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/qb_px_10"
+            android:layout_marginTop="@dimen/qb_px_5"
+            android:gravity="center"
+            android:text="@string/freetext_edit_attr_done"
+            android:textSize="@dimen/qb_px_16"
+            android:textColor="@color/white_color"
+            app:sCornersRadius="@dimen/qb_px_4"
+            app:sGravity="center"
+            app:sStrokeWidth="@dimen/qb_px_1"
+            app:sUseSelector="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/id_edit_sign_attr_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/qb_px_10"
+        android:orientation="horizontal"
+        android:layout_below="@+id/id_edit_sign_menu_rel">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_edit_sign_color_lv"
+            android:layout_width="@dimen/qb_px_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/qb_px_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:elevation="@dimen/qb_px_5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/qb_px_0"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:padding="@dimen/qb_px_6"
+                android:src="@drawable/draw_ic_line_weight"/>
+
+            <SeekBar
+                android:id="@+id/id_edit_sign_size_bar"
+                style="@style/sign_edit_seek_bar" />
+
+            <TextView
+                android:id="@+id/id_edit_sign_size_value"
+                android:layout_width="@dimen/qb_px_0"
+                android:layout_weight="1"
+                android:textSize="@dimen/qb_px_10"
+                android:textColor="@color/page_indicator"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.kdanmobile.kmpdfkit.annotation.signature.KMPDFSignatureEditView
+        android:id="@+id/id_edit_sign_edit_view"
+        android:layout_below="@+id/id_edit_sign_attr_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/menu_gray_bg"/>
+    <TextView
+        android:id="@+id/id_edit_sign_addText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/qb_px_16"
+        android:text="@string/sign_edit_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/qb_px_20"/>
+    <ImageButton
+        android:id="@+id/id_edit_sign_deleteSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/qb_px_16"
+        android:layout_marginBottom="@dimen/qb_px_16"
+        android:src="@drawable/ic_delete"
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>

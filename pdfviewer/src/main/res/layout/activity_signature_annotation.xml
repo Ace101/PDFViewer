@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+    <include
+        android:id="@+id/id_sign_annot_toolbar"
+        layout="@layout/layout_toolbar"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_sign_annot_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_sign_annot_toolbar"
+        android:layout_above="@+id/id_sign_annot_delete"
+        android:cacheColorHint="@null"
+        android:padding="@dimen/qb_px_2"/>
+
+    <RelativeLayout
+        android:id="@+id/id_sign_annot_list_dis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_sign_annot_toolbar">
+        <ImageView
+            android:layout_width="@dimen/qb_px_100"
+            android:layout_height="@dimen/qb_px_110"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/id_sign_annot_list_dis_title"
+            android:src="@drawable/ic_signature_dis" />
+        <TextView
+            android:id="@+id/id_sign_annot_list_dis_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/theme_color_black"
+            android:text="@string/signature_custom_dis_title"
+            android:textSize="@dimen/qb_px_20"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:layout_marginBottom="@dimen/qb_px_10"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_sign_annot_list_dis_title"
+            android:layout_centerHorizontal="true"
+            android:text="@string/signature_dis"
+            android:textSize="@dimen/qb_px_18"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_signature_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/qb_px_75"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/qb_px_30"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/id_sign_annot_delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_56"
+        android:layout_alignParentBottom="true"
+        android:drawableTop="@drawable/ic_delete"
+        android:background="@color/theme_color_white"
+        android:textAllCaps="false"
+        android:text="@string/edit_page_function_delete"
+        android:visibility="gone"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/id_sign_annot_floating_button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/signature_ic_add"
+        android:layout_marginRight="@dimen/qb_px_15"
+        android:layout_marginBottom="@dimen/qb_px_20"
+        app:fabSize="normal"
+        app:elevation="5dp"
+        app:backgroundTint="@color/theme_color_cyan"
+        app:rippleColor="@color/menu_gray_bg"/>
+
+</RelativeLayout>

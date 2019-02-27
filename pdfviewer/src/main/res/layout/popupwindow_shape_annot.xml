@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/makeup_bg">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/id_shape_menu_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_40"
+        style="@style/tab_selector"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_shape_color_choose_lv"
+        android:layout_below="@id/id_shape_menu_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/qb_px_10"
+        android:background="@color/menu_gray_bg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_shape_color_choose_lv">
+
+        <include
+            layout="@layout/layout_stroke_menu"/>
+
+        <include
+            layout="@layout/layout_fill_menu"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

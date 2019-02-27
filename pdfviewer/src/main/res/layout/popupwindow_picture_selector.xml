@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/select_picture_popupwindow_bg"
+    android:paddingLeft="@dimen/qb_px_10"
+    android:paddingRight="@dimen/qb_px_10"
+    android:paddingBottom="@dimen/qb_px_10">
+
+    <Button
+        android:id="@+id/id_picture_selector_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_50"
+        android:text="@string/cancel"
+        android:background="@drawable/button_all_corners"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/qb_px_10"
+        android:textColor="@color/select_picture_func_text_color"
+        android:textSize="@dimen/qb_px_18" />
+
+    <Button
+        android:id="@+id/id_picture_selector_pick_picture"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_50"
+        android:background="@drawable/button_bottom_corners"
+        android:layout_above="@id/id_picture_selector_cancel"
+        android:text="@string/photo_album"
+        android:textColor="@color/select_picture_func_text_color"
+        android:textSize="@dimen/qb_px_18" />
+
+    <View
+        android:id="@+id/gap"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/id_picture_selector_pick_picture"
+        android:background="@color/select_picture_func_gap_color"/>
+
+    <Button
+        android:id="@+id/id_picture_selector_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_50"
+        android:text="@string/use_camera"
+        android:background="@drawable/button_top_corners"
+        android:layout_above="@id/gap"
+        android:textColor="@color/select_picture_func_text_color"
+        android:textSize="@dimen/qb_px_18"/>
+
+</RelativeLayout>

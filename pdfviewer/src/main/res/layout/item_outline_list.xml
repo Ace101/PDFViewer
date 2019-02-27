@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/qb_px_4"
+    android:paddingRight="@dimen/qb_px_4">
+
+    <TextView
+        android:id="@+id/id_outline_item_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/id_outline_item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/id_outline_item_padding"
+        android:src="@drawable/view_ic_zhankai"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/id_outline_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/id_outline_item_page"
+        android:layout_toRightOf="@+id/id_outline_item_arrow"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:minLines="1"
+        android:paddingBottom="@dimen/qb_px_12"
+        android:paddingTop="@dimen/qb_px_12"
+        android:singleLine="true"
+        android:text="大纲选项内容"
+        android:textColor="@color/theme_color_black"
+        android:textSize="@dimen/qb_px_14"/>
+
+    <TextView
+        android:id="@+id/id_outline_item_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/qb_px_5"
+        android:text="1"
+        android:textColor="@color/theme_color_cyan"
+        android:textSize="@dimen/qb_px_12"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/id_outline_item_underline_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/qb_px_1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_1"
+            android:background="#1a000000"/>
+    </LinearLayout>
+
+</RelativeLayout>

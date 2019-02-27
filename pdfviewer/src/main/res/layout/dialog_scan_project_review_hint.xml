@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/qb_px_232"
+    android:layout_height="@dimen/qb_px_242"
+    android:background="@color/white_color">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/id_scan_project_review_hint_icon"
+        android:layout_width="@dimen/qb_px_166"
+        android:layout_height="@dimen/qb_px_124"
+        android:layout_marginStart="@dimen/qb_px_33"
+        android:layout_marginTop="@dimen/qb_px_16"
+        android:layout_marginEnd="@dimen/qb_px_33"
+        android:layout_marginBottom="@dimen/qb_px_13"
+        app:layout_constraintBottom_toTopOf="@id/id_scan_project_review_hint_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/gif_past_due" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/id_scan_project_review_hint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/qb_px_20"
+        android:text="@string/scan_drag_to_sort"
+        android:textColor="@color/color_setting_menu_item_title"
+        android:textSize="@dimen/qb_px_16"
+        app:layout_constraintBottom_toTopOf="@id/id_scan_project_review_hint_confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_scan_project_review_hint_icon" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/id_scan_project_review_hint_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_36"
+        android:layout_marginStart="@dimen/qb_px_16"
+        android:layout_marginEnd="@dimen/qb_px_16"
+        android:layout_marginBottom="@dimen/qb_px_17"
+        android:background="@drawable/shape_scan_review_hint_button"
+        android:gravity="center"
+        android:text="@string/scan_i_know"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/qb_px_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_scan_project_review_hint_text" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/id_scan_project_review_hint_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qb_px_6"
+        android:layout_marginEnd="@dimen/qb_px_6"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/reader_doc_search"
+        android:title="@string/reader_doc_search"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_search_white"/>
+
+    <item
+        android:id="@+id/reader_doc_book_line"
+        android:title="@string/reader_doc_book_line"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/view_ic_book_white"/>
+
+    <item
+        android:id="@+id/reader_doc_more"
+        android:title="@string/reader_doc_more"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_more_white"/>
+
+</menu>

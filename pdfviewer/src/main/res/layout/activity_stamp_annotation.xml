@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_setting_menu_item_bg">
+    <RelativeLayout
+        android:id="@+id/id_stamp_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_56"
+        android:background="@color/theme_color_cyan">
+        <ImageButton
+            android:id="@+id/id_stamp_menu_back"
+            android:layout_width="@dimen/qb_px_50"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back_white"
+            android:background="@color/theme_color_cyan"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/id_stamp_menu_tabLayout"
+            android:layout_width="@dimen/qb_px_200"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            style="@style/tab_selector"/>
+
+        <ImageButton
+            android:id="@+id/id_stamp_menu_edit"
+            android:layout_width="@dimen/qb_px_50"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_edit_white"
+            android:layout_alignParentRight="true"
+            android:background="@color/theme_color_cyan"/>
+        <ImageButton
+            android:id="@+id/id_stamp_menu_delete"
+            android:layout_width="@dimen/qb_px_50"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_delete_white"
+            android:layout_alignParentRight="true"
+            android:background="@color/theme_color_cyan"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_stamp_standard_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_stamp_menu"
+        android:background="@color/theme_color_white"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/id_stamp_dis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_stamp_menu"
+        android:background="@color/white_color"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="@dimen/qb_px_100"
+            android:layout_height="@dimen/qb_px_110"
+            android:src="@drawable/stamp_custom_dis"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/id_stamp_dis_text"/>
+        <TextView
+            android:id="@+id/id_stamp_dis_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/theme_color_black"
+            android:text="@string/stamp_custom_dis_title"
+            android:textSize="@dimen/qb_px_20"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:layout_marginBottom="@dimen/qb_px_10"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/id_stamp_dis_text"
+            android:text="@string/stamp_custom_dis_title_sub"
+            android:textColor="@color/second_title_text_color"
+            android:textSize="@dimen/qb_px_20"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_signature_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/qb_px_75"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/qb_px_30"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_stamp_menu">
+        <RelativeLayout
+            android:id="@+id/id_stamp_list_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/id_stamp_add_text"
+                style="@style/more_setting_header"
+                android:paddingTop="@dimen/qb_px_15"
+                android:paddingStart="@dimen/qb_px_10"
+                android:text="@string/stamp_floating_button_text"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_stamp_add_text_recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_stamp_add_text"
+                android:background="@color/color_setting_menu_item_bg"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/id_stamp_add_image"
+                style="@style/more_setting_header"
+                android:paddingTop="@dimen/qb_px_15"
+                android:paddingStart="@dimen/qb_px_10"
+                android:layout_below="@+id/id_stamp_add_text_recycleView"
+                android:text="@string/stamp_floating_button_image" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_stamp_add_image_recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_stamp_add_image"
+                android:background="@color/color_setting_menu_item_bg"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/id_stamp_floating_button_layout"
+        layout="@layout/layout_stamp_floating_action_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>

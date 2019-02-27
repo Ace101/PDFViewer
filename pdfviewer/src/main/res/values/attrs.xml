@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="corner_size" format="integer" />
+        <attr name="corner_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean" />
+        <attr name="ios" format="boolean" />
+        <attr name="leftSwipe" format="boolean" />
+        <attr name="autoHeight" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SuperButton">
+        <attr name="sGravity" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="top" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+
+        <attr name="sShapeType" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="oval" value="1" />
+            <enum name="line" value="2" />
+            <enum name="ring" value="3" />
+        </attr>
+
+        <attr name="sSolidColor" format="color" />
+
+        <attr name="sSelectorPressedColor" format="color" />
+        <attr name="sSelectorDisableColor" format="color" />
+        <attr name="sSelectorNormalColor" format="color" />
+
+        <attr name="sCornersRadius" format="dimension" />
+
+        <attr name="sCornersTopLeftRadius" format="dimension" />
+        <attr name="sCornersTopRightRadius" format="dimension" />
+        <attr name="sCornersBottomLeftRadius" format="dimension" />
+        <attr name="sCornersBottomRightRadius" format="dimension" />
+
+        <attr name="sStrokeWidth" format="dimension" />
+        <attr name="sStrokeDashWidth" format="dimension" />
+        <attr name="sStrokeDashGap" format="dimension" />
+        <attr name="sStrokeColor" format="color" />
+
+        <attr name="sSizeWidth" format="dimension" />
+        <attr name="sSizeHeight" format="dimension" />
+
+        <attr name="sGradientOrientation" format="enum">
+            <enum name="TOP_BOTTOM" value="0" />
+            <enum name="TR_BL" value="1" />
+            <enum name="RIGHT_LEFT" value="2" />
+            <enum name="BR_TL" value="3" />
+            <enum name="BOTTOM_TOP" value="4" />
+            <enum name="BL_TR" value="5" />
+            <enum name="LEFT_RIGHT" value="6" />
+            <enum name="TL_BR" value="7" />
+        </attr>
+
+        <attr name="sGradientAngle" format="dimension" />
+        <attr name="sGradientCenterX" format="dimension" />
+        <attr name="sGradientCenterY" format="dimension" />
+        <attr name="sGradientGradientRadius" format="dimension" />
+        <attr name="sGradientStartColor" format="color" />
+        <attr name="sGradientCenterColor" format="color" />
+        <attr name="sGradientEndColor" format="color" />
+        <attr name="sGradientUseLevel" format="boolean" />
+
+        <attr name="sUseSelector" format="boolean" />
+
+        <attr name="sGradientType" format="enum">
+            <enum name="linear" value="0" />
+            <enum name="radial" value="1" />
+            <enum name="sweep" value="2" />
+        </attr>
+
+    </declare-styleable>
+
+    <!--搜索-->
+    <declare-styleable name="LSearchView">
+
+        <!-- search bar height;
+        the default is 48dp;-->
+        <attr name="search_bar_height" format="dimension" />
+
+        <!-- back button padding;
+        back button size = search_bar_height - search_button_padding*2;
+        the default is 12dp;-->
+        <attr name="back_button_padding" format="dimension" />
+
+        <!-- search button padding;
+        search button size = search_bar_height - search_button_padding*2;
+        the default is 12dp;-->
+        <attr name="search_button_padding" format="dimension" />
+
+        <!-- edit text view hint text;
+        no default;-->
+        <attr name="search_hint" format="string" />
+
+        <!-- search view background color;
+        the default is 0xaa000000;-->
+        <attr name="search_bg_color" format="color" />
+
+        <!-- search view animation duration time;
+        no default value;-->
+        <attr name="anim_time" format="integer" />
+
+        <!-- search view reveal animation start x from right;
+        the default is 23dp;-->
+        <attr name="anim_origin_x" format="dimension" />
+
+        <!-- search view reveal animation start y from top;
+        the default is 23dp-->
+        <attr name="anim_origin_y" format="dimension" />
+
+        <!-- search bar back button icon res;
+        the default is R.darwable.ic_back;-->
+        <attr name="back_btn_icon" format="reference" />
+
+        <!-- search bar search button icon res;
+        the default is R.darwable.ic_search;-->
+        <attr name="search_btn_icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectableImageView">
+        <attr name="android:src" />
+        <attr name="android:layout_width" />
+        <attr name="android:layout_height" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyLayout">
+        <attr name="empty_text" format="string" />
+        <attr name="empty_text_color" format="color" />
+        <attr name="empty_text_size" format="dimension"/>
+        <attr name="empty_icon" format="reference" />
+    </declare-styleable>
+
+</resources>

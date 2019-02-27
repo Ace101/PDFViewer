@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_white">
+
+    <include
+        android:id="@+id/id_stamp_text_toolbar"
+        layout="@layout/layout_toolbar"
+        android:minHeight="?attr/actionBarSize"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_stamp_text_toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/id_stamp_text_previewLayout"
+                android:background="@color/menu_gray_bg"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/qb_px_10"
+                    android:gravity="top"
+                    android:textSize="@dimen/qb_px_16"
+                    android:textColor="@color/page_turn_text_color"
+                    android:text="@string/stamp_create_text_preview"/>
+
+                <com.kdanmobile.kmpdfkit.annotation.stamp.view.KMPDFStampTextView
+                    android:id="@+id/id_stamp_text_stamp_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:max_TextSize="40"
+                    app:max_Width="250"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/id_stamp_text_edit_text_layout"
+                android:layout_below="@id/id_stamp_text_previewLayout"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/qb_px_10"
+                    android:textSize="@dimen/qb_px_16"
+                    android:textColor="@color/page_turn_text_color"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/stamp_create_text_text"/>
+
+                <EditText
+                    android:id="@+id/id_stamp_text_stamp_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:hint="@string/stamp_create_text_simple"
+                    android:textColor="@color/page_turn_text_color"
+                    android:textSize="@dimen/qb_px_16"
+                    android:gravity="center_vertical|left"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_stamp_text_color_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_220"
+                android:layout_below="@id/id_stamp_text_edit_text_layout">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/qb_px_8"
+                    android:layout_marginRight="@dimen/qb_px_8"
+                    android:background="#cccccc"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/qb_px_10"
+                    android:text="@string/stamp_create_text_color"
+                    android:textColor="@color/page_turn_text_color"
+                    android:textSize="@dimen/qb_px_16"/>
+
+                <com.kdanmobile.pdfviewer.screenui.reader.widget.SelectableImageView
+                    android:id="@+id/a_4"
+                    style="@style/stamp_text_color_choose"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/a_4"/>
+
+                <com.kdanmobile.pdfviewer.screenui.reader.widget.SelectableImageView
+                    android:id="@+id/a_3"
+                    style="@style/stamp_text_color_choose"
+                    android:layout_toLeftOf="@id/a_4"
+                    android:src="@drawable/a_3"/>
+
+                <com.kdanmobile.pdfviewer.screenui.reader.widget.SelectableImageView
+                    android:id="@+id/a_2"
+                    style="@style/stamp_text_color_choose"
+                    android:layout_toLeftOf="@id/a_3"
+                    android:src="@drawable/a_2"/>
+
+                <com.kdanmobile.pdfviewer.screenui.reader.widget.SelectableImageView
+                    android:id="@+id/a_1"
+                    android:layout_width="@dimen/qb_px_32"
+                    android:layout_height="@dimen/qb_px_32"
+                    android:layout_marginTop="@dimen/qb_px_18"
+                    android:layout_marginEnd="@dimen/qb_px_10"
+                    android:layout_toLeftOf="@+id/a_2a"
+                    android:src="@drawable/a_1"/>
+
+                <com.kdanmobile.pdfviewer.screenui.reader.widget.SelectableImageView
+                    android:id="@+id/a_4a"
+                    style="@style/stamp_text_color_choose"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/a_4"
+                    android:src="@drawable/a_4a"/>
+
+                <com.kdanmobile.pdfviewer.screenui.reader.widget.SelectableImageView
+                    android:id="@+id/a_3a"
+                    style="@style/stamp_text_color_choose"
+                    android:layout_below="@id/a_4"
+                    android:layout_toLeftOf="@id/a_4a"
+                    android:src="@drawable/a_3a"/>
+
+                <com.kdanmobile.pdfviewer.screenui.reader.widget.SelectableImageView
+                    android:id="@+id/a_2a"
+                    style="@style/stamp_text_color_choose"
+                    android:layout_below="@id/a_4"
+                    android:layout_toLeftOf="@id/a_3a"
+                    android:src="@drawable/a_2a"/>
+
+                <com.kdanmobile.pdfviewer.screenui.reader.widget.SelectableImageView
+                    android:id="@+id/a_4b"
+                    style="@style/stamp_text_color_choose"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/a_4a"
+                    android:src="@drawable/a_4b"/>
+
+                <com.kdanmobile.pdfviewer.screenui.reader.widget.SelectableImageView
+                    android:id="@+id/a_3b"
+                    style="@style/stamp_text_color_choose"
+                    android:layout_below="@id/a_4a"
+                    android:layout_toLeftOf="@id/a_4b"
+                    android:src="@drawable/a_3b"/>
+
+                <com.kdanmobile.pdfviewer.screenui.reader.widget.SelectableImageView
+                    android:id="@+id/a_2b"
+                    style="@style/stamp_text_color_choose"
+                    android:layout_below="@id/a_4a"
+                    android:layout_toLeftOf="@id/a_3b"
+                    android:src="@drawable/a_2b"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/qb_px_8"
+                    android:layout_marginRight="@dimen/qb_px_8"
+                    android:background="#cccccc"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/id_stamp_text_data_layout"
+                android:layout_below="@id/id_stamp_text_color_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_50">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/qb_px_10"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/page_turn_text_color"
+                    android:textSize="@dimen/qb_px_16"
+                    android:text="@string/stamp_create_text_date"/>
+
+                <Switch
+                    android:id="@+id/id_stamp_text_date_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/qb_px_20"
+                    android:switchMinWidth="@dimen/qb_px_20"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:thumb="@drawable/seek_thumb_one"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/qb_px_8"
+                    android:layout_marginRight="@dimen/qb_px_8"
+                    android:background="#cccccc"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@id/id_stamp_text_data_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_50">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/page_turn_text_color"
+                    android:textSize="@dimen/qb_px_16"
+                    android:text="@string/stamp_create_text_time"/>
+
+                <Switch
+                    android:id="@+id/id_stamp_text_time_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/qb_px_20"
+                    android:switchMinWidth="@dimen/qb_px_20"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:thumb="@drawable/seek_thumb_one"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/qb_px_8"
+                    android:layout_marginRight="@dimen/qb_px_8"
+                    android:background="#cccccc"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

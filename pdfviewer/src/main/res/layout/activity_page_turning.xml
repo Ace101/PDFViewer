@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/layout_toolbar"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <RelativeLayout
+        android:id="@+id/id_page_turning_v_continue"
+        style="@style/page_turn_relativeLayout">
+        <TextView
+            android:id="@+id/id_page_turning_v_continue_text"
+            style="@style/page_turn_text"
+            android:text="@string/page_turn_v_continue"/>
+        <ImageView
+            android:id="@+id/id_page_turning_v_continue_iv"
+            style="@style/page_turn_image"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:background="#1e000000"/>
+
+    <RelativeLayout
+        android:id="@+id/id_page_turning_v_single"
+        style="@style/page_turn_relativeLayout">
+
+        <TextView
+            android:id="@+id/id_page_turning_v_single_text"
+            style="@style/page_turn_text"
+            android:text="@string/page_turn_v_single"/>
+        <ImageView
+            android:id="@+id/id_page_turning_v_single_iv"
+            style="@style/page_turn_image"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:background="#1e000000"/>
+
+    <RelativeLayout
+        android:id="@+id/id_page_turning_h_single"
+        style="@style/page_turn_relativeLayout">
+
+        <TextView
+            android:id="@+id/id_page_turning_h_single_text"
+            style="@style/page_turn_text"
+            android:text="@string/page_turn_h_single"/>
+        <ImageView
+            android:id="@+id/id_page_turning_h_single_iv"
+            style="@style/page_turn_image"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:background="#1e000000"/>
+</LinearLayout>

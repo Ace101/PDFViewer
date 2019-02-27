@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/qb_px_56"
+    android:minWidth="@dimen/qb_px_52"
+    android:paddingEnd="@dimen/qb_px_5"
+    android:paddingStart="@dimen/qb_px_5">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/id_document_action_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/id_document_action_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_move" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/id_document_action_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_setting_about_us_text"
+        android:textSize="@dimen/qb_px_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_document_action_icon"
+        tools:text="@string/local_doc_more_menu_move" />
+</android.support.constraint.ConstraintLayout>

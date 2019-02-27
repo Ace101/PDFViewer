@@ -1,0 +1,309 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">PDF Viewer</string>
+
+    <string name="SCAN_TAB_ALL" tools:keep="@string/SCAN_TAB_ALL">ALL</string>
+
+    <string name="settings_commonly_used" tools:keep="@string/settings_commonly_used">Commonly used</string>
+    <string name="settings_scavenging_catch" tools:keep="@string/settings_scavenging_catch">Scavenging Catch</string>
+    <string name="settings_feedback" tools:keep="@string/settings_feedback">Feedback</string>
+    <string name="settings_theme_choose" tools:keep="@string/settings_theme_choose">Theme color</string>
+    <string name="settings_share_pdf" tools:keep="@string/settings_share_pdf">Share PDF Reader Pro</string>
+    <string name="settings_share_with_friends" tools:keep="@string/settings_share_with_friends">Share with friends</string>
+    <string name="settings_like" tools:keep="@string/settings_like">Like</string>
+    <string name="settings_about_us" tools:keep="@string/settings_about_us">About Us</string>
+    <string name="settings_about_us_technologies" tools:keep="@string/settings_about_us_technologies">PDF Technologies</string>
+    <string name="settings_about_us_copyright" tools:keep="@string/settings_about_us_copyright">© 2009&#8211;2018 PDF Technologies, Inc</string>
+    <string name="settings_about_us_menu_update" tools:keep="@string/settings_about_us_menu_update">Update</string>
+    <string name="settings_about_us_menu_official" tools:keep="@string/settings_about_us_menu_official">Official network</string>
+    <string name="settings_about_us_menu_support" tools:keep="@string/settings_about_us_menu_support">Support</string>
+    <string name="settings_about_us_menu_website" tools:keep="@string/settings_about_us_menu_website">www.pdfreaderpro.com</string>
+    <string name="settings_about_us_menu_email" tools:keep="@string/settings_about_us_menu_email">support@pdfreaderpro.com</string>
+    <string name="settings_about_us_version" translatable="false" tools:keep="@string/settings_about_us_version">V%1$s</string>
+    <string name="settings_about_us_app_not_found">Not found App.</string>
+
+    <string name="local_doc_search" tools:keep="@string/local_doc_search">Search</string>
+    <string name="local_doc_edit" tools:keep="@string/local_doc_edit">Edit</string>
+    <string name="local_doc_list_mode" tools:keep="@string/local_doc_list_mode">List Mode</string>
+    <string name="local_doc_sort" tools:keep="@string/local_doc_sort">Sort By</string>
+    <string name="recent_doc_delete" tools:keep="@string/recent_doc_delete">Delete</string>
+    <string name="collection_doc_delete" tools:keep="@string/collection_doc_delete">Delete</string>
+
+    <string name="scan_all_search" tools:keep="@string/scan_all_search">Search</string>
+    <string name="scan_all_list_mode" tools:keep="@string/scan_all_list_mode">ListMode</string>
+    <string name="scan_all_sort" tools:keep="@string/scan_all_sort">Sort</string>
+    <string name="scan_done" tools:keep="@string/scan_done">Finish</string>
+    <string name="scan_gallery" tools:keep="@string/scan_gallery">Gallery</string>
+    <string name="scan_preview_fail" tools:keep="@string/scan_preview_fail">startPreview failed</string>
+
+    <string name="button_unClickable_text" tools:keep="@string/button_unClickable_text">In Use</string>
+    <string name="button_clickable_text">Use</string>
+
+    <string name="app_permission_storage_and_camera" tools:keep="@string/app_permission_storage_and_camera">test:申请SD卡读写、相机权限</string>
+    <string name="app_exist_warn" tools:keep="@string/app_exist_warn">test:即将退出APP应用</string>
+
+    <string name="reader_doc_search">Search</string>
+    <string name="reader_doc_book_line">OurLine and Bookmark</string>
+    <string name="reader_doc_more">more</string>
+
+    <string name="OUTLINE_AND_BOOKMARK_THEME">O&amp;B</string>
+    <string name="OUTLINE_PAGE">OUTLINE</string>
+    <string name="BOOKMARK_PAGE">BOOKMARKS</string>
+
+    <string name="SETTINGS_THEME" tools:keep="@string/SETTINGS_THEME">Settings</string>
+    <string name="SCAN_THEME" tools:keep="@string/SCAN_THEME">Scan</string>
+    <string name="DOC_THEME" tools:keep="@string/DOC_THEME">Documents</string>
+
+    <string name="search_text_tab">TEXT</string>
+    <string name="search_page_tab">PAGE NUM</string>
+    <string name="search_text_hint">Search Text</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <string name="settings_more_share">Share</string>
+    <string name="settings_more_print">Print</string>
+    <string name="settings_more_reflow">Text Reflow</string>
+    <string name="settings_more_info">Info</string>
+    <string name="settings_more_lock">Screen Lock</string>
+    <string name="settings_more_turn">Page Turning</string>
+    <string name="settings_more_brightness">Brightness</string>
+
+    <string name="settings_more_head_one">File operation</string>
+    <string name="settings_more_head_three">Page setting</string>
+
+    <string name="settings_more_theme_choose">More</string>
+
+    <string name="page_turn_v_continue">Vertical continue</string>
+    <string name="page_turn_v_single">Vertical single page</string>
+    <string name="page_turn_h_single">Horizontal single page</string>
+
+    <string name="once_click_information" tools:keep="@string/once_click_information">Click again to exit the application</string>
+
+    <string name="theme_color_Black" tools:keep="@string/theme_color_Black">Black</string>
+    <string name="theme_color_Red" tools:keep="@string/theme_color_Red">Red</string>
+    <string name="theme_color_Orange" tools:keep="@string/theme_color_Orange">Orange</string>
+    <string name="theme_color_Green" tools:keep="@string/theme_color_Green">Green</string>
+    <string name="theme_color_Cyan" tools:keep="@string/theme_color_Cyan">Cyan</string>
+    <string name="theme_color_Blue" tools:keep="@string/theme_color_Blue">Blue</string>
+    <string name="theme_color_Purple" tools:keep="@string/theme_color_Purple">Purple</string>
+
+    <string name="markuperpen_pop_size" tools:keep="@string/markuperpen_pop_size">size</string>
+    <string name="markuperpen_pop_style" tools:keep="@string/markuperpen_pop_style">style</string>
+
+    <string name="null_str">&#160;</string>
+    <string name="out_line_diss">Sorry, no outline</string>
+
+    <string name="search_header_page">Page</string>
+    <string name="search_text_dis">Sorry, no contents</string>
+    <string name="search_page_dis">Sorry, no page</string>
+    <string name="search_complete" tools:keep="@string/search_complete">Search Complete</string>
+    <string name="document_search_total_records" tools:keep="@string/document_search_total_records">A total of %1$d records</string>
+    <string name="local_doc_more_menu_move" tools:keep="@string/local_doc_more_menu_move">Move</string>
+    <string name="local_doc_more_menu_rename" tools:keep="@string/local_doc_more_menu_rename">Rename</string>
+    <string name="local_doc_more_menu_collection" tools:keep="@string/local_doc_more_menu_collection">Collection</string>
+    <string name="local_doc_more_menu_share" tools:keep="@string/local_doc_more_menu_share">Share</string>
+    <string name="local_doc_more_menu_copy" tools:keep="@string/local_doc_more_menu_copy">Copy</string>
+    <string name="local_doc_more_menu_info" tools:keep="@string/local_doc_more_menu_info">Info</string>
+    <string name="local_doc_more_menu_delete" tools:keep="@string/local_doc_more_menu_delete">Delete</string>
+    <string name="doc_copy_to" tools:keep="@string/doc_copy_to">Copy To</string>
+    <string name="doc_move_to" tools:keep="@string/doc_move_to">Move to</string>
+    <string name="doc_path_filter" translatable="false" tools:keep="@string/doc_path_filter">&#160;%s&#160;&#124;&#160;</string>
+    <string name="doc_path_local" tools:keep="@string/doc_path_local">Local</string>
+
+    <string name="bookmark_dis">No bookmark added yet</string>
+
+    <string name="dialog_error">Create Dialog error</string>
+    <string name="dialog_enter_password_title">File has been encrypted</string>
+    <string name="dialog_enter_add_bookmark_title">Please enter a bookmark name</string>
+    <string name="dialog_enter_rename_bookmark_title">Please change a new bookmark name</string>
+
+    <string name="add_bookmark_success">Bookmark added successfully</string>
+    <string name="add_bookmark_fail">Add bookmark failed</string>
+
+    <string name="rename_bookmark_success">Rename bookmark successfully</string>
+    <string name="rename_bookmark_fail">Rename bookmark failed</string>
+
+    <string name="edit_page_function_rotate">Rotate</string>
+    <string name="edit_page_function_delete">Delete</string>
+    <string name="edit_page_function_extract">Extract</string>
+    <string name="edit_page_search_word">Searching key words...</string>
+
+    <string name="choose_page">Please choose the required page</string>
+    <string name="not_delete_all">Can\'t delete all</string>
+    <string name="pdf_export_proccessing" tools:keep="@string/pdf_export_proccessing">Spliting...</string>
+    <string name="pdf_export_success">Success!</string>
+    <string name="pdf_export_success_mes">The file has been saved in</string>
+    <string name="pdf_export_fail_mes">File save failed!</string>
+    <string name="pdf_swap_failed" tools:keep="@string/pdf_swap_failed">Error! Please swap again.</string>
+    <string name="pdf_drag_failed">Error! Please drag again.</string>
+
+    <string name="shape_stroke_tab">Border</string>
+    <string name="shape_fill_tab">Fill</string>
+
+    <string name="freetext_edit_attr_done">Done</string>
+    <string name="freetext_keyboard_tab" tools:keep="@string/freetext_keyboard_tab">Keyboard</string>
+    <string name="freetext_typeface_tab">Fond</string>
+    <string name="freetext_font_tab">Style</string>
+    <string name="freetext_typeface_name_one">Courier</string>
+    <string name="freetext_typeface_name_two">Helvetica</string>
+    <string name="freetext_typeface_name_three">Times-Roman</string>
+
+    <string name="stamp_floating_button_text">Text Stamp</string>
+    <string name="stamp_floating_button_image">Image Stamp</string>
+    <string name="stamp_create_text_preview">Preview</string>
+    <string name="stamp_create_text_text">Text</string>
+    <string name="stamp_create_text_color">Color</string>
+    <string name="stamp_create_text_date">Date</string>
+    <string name="stamp_create_text_time">Time</string>
+    <string name="stamp_create_text_simple">StampText</string>
+    <string name="stamp_custom_dis_title">No stamp yet</string>
+    <string name="stamp_custom_dis_title_sub">Click to add new stamps</string>
+    <string name="stamp_tab_standard">Standard</string>
+    <string name="stamp_tab_custom">Custom</string>
+    <string name="stamp_create_text">Create Text Stamp</string>
+    <string name="loading_image_stamp">Loading stamp image...</string>
+
+    <string name="use_camera">Use Camera</string>
+    <string name="photo_album">Photo</string>
+    <string name="load_image_stamp_fail">Loading image stamp fail!</string>
+    <string name="no_files" tools:keep="@string/no_files">No files yet</string>
+    <string name="not_found_app">No related apps found</string>
+
+    <string name="reader_pdf_info">PDF Info</string>
+    <string name="reader_pdf_info_createInfo">Create Information</string>
+    <string name="reader_pdf_info_accessPer">Access Permissions</string>
+    <string name="reader_pdf_info_fileName">File Name:</string>
+    <string name="reader_pdf_info_size">Size:</string>
+    <string name="reader_pdf_info_title">Title:</string>
+    <string name="reader_pdf_info_author">Author:</string>
+    <string name="reader_pdf_info_version">Version:</string>
+    <string name="reader_pdf_info_pages">Pages:</string>
+    <string name="reader_pdf_info_creator">Creator:</string>
+    <string name="reader_pdf_info_producer">Producer:</string>
+    <string name="reader_pdf_info_creationDate">Creation Date:</string>
+    <string name="reader_pdf_info_modification">Modification:</string>
+    <string name="reader_pdf_info_encrypted">Encrypted:</string>
+    <string name="reader_pdf_info_unlocked">Unlocked:</string>
+    <string name="reader_pdf_info_allowCopy">Allow Copying:</string>
+    <string name="reader_pdf_info_allowPrint">Allow Printing:</string>
+
+    <string name="annot_menu_delete">Delete</string>
+    <string name="annot_menu_edit">Edit</string>
+    <string name="scan_project_done" tools:keep="@string/scan_project_done">Done</string>
+    <string name="select_all" tools:keep="@string/select_all">Select All</string>
+
+    <string name="sign_edit_title">Create signature</string>
+    <string name="sign_annotation_title">Signature</string>
+    <string name="sign_edit_content">Sign Here</string>
+    <string name="load_image_sign_fail">Loading signature image fail!</string>
+    <string name="loading_image_sign">Loading signature image...</string>
+    <string name="clean_image_sign">Clean Signature</string>
+    <string name="clean_image_sign_suc">Clean all signature success!</string>
+    <string name="clean_image_sign_fail">Clean all signature fail!</string>
+
+    <string name="link_annot_url">URL</string>
+    <string name="link_annot_page">Page</string>
+    <string name="link_annot_email">Email</string>
+    <string name="link_annot_title">New Link</string>
+    <string name="link_annot_done">Done</string>
+    <string name="link_annot_cancel">Cancel</string>
+    <string name="overstep_the_boundary">Page must be</string>
+    <string name="number_format_error">Please enter right page!</string>
+
+    <string name="context_menu_edit">Edit</string>
+    <string name="context_common_yes">Yes</string>
+    <string name="context_common_no">No</string>
+
+    <string name="common_share">Share</string>
+    <string name="saving_annotation">Saving annotation...</string>
+    <string name="save_annot_success">Save annotation success!</string>
+    <string name="save_annot_fail">Save annotation fail!</string>
+
+    <string name="encrypted_document_not_print">The encrypted document does not support printing !</string>
+    <string name="print_systemversion_not_support">Printer feature supports Android System 4.4 at least. Please upgrade your system.</string>
+    <string name="print_not_working">Printer is not available.</string>
+    <string name="print_warn_tip">Tips</string>
+    <string name="print_warn_content">Before you print, please be assure you have downloaded the print plug-ins (HP printer plug-in, for example); otherwise you will fail to print.</string>
+
+    <string name="get_core_error">Access to the document content failed</string>
+    <string name="open_file_error">Open file error</string>
+    <string name="enter_password">Please enter password!</string>
+    <string name="verify_license_failed">Verify license failed</string>
+    <string name="get_stream_of_pdf_failed">Get the stream of this pdf failed</string>
+    <string name="open_file_failed">Open this file failed</string>
+    <string name="please_input_a_number">Please input a number</string>
+    <string name="no_browser">Please download a browser</string>
+    <string name="no_email_app">Please download an application for email</string>
+    <string name="no_content_to_paste">No content to paste</string>
+    <string name="document_has_changes_save_them_">This document has changed, would you want to save it ?</string>
+    <string name="simple_yes">Yes</string>
+    <string name="simple_no">No</string>
+    <string name="simple_confirm">Confirm</string>
+    <string name="simple_cancel">Cancel</string>
+    <string name="save_changes_dialog_title">Tips:</string>
+
+    <string name="pdf_common_selected">Selected</string>
+    <string name="edit_page_title">Page Edit</string>
+
+    <string name="sdk_version">Version</string>
+    <string name="sdk_phone">Phone</string>
+    <string name="sdk_email">Email</string>
+    <string name="sdk_official_website">Official website</string>
+    <string name="sdk_copy_right">Copyright</string>
+
+    <string name="loading_image">Loading image…</string>
+    <string name="clean_signature_warning">Are you sure to delete all signatures?</string>
+
+    <string name="signature_custom_dis_title">No signature yet</string>
+    <string name="signature_dis">Click "+" to create a signature</string>
+
+    <string name="reader_tool_bar_pop_markup">Long press can change color</string>
+    <string name="reader_tool_bar_pop_shape">Long press can change shape</string>
+
+    <string name="annot_menu_color">Color</string>
+    <string name="annot_menu_opacity">Opacity</string>
+    <string name="annot_menu_thickness">Thickness</string>
+    <string name="annot_menu_link">Link</string>
+    <string name="annot_menu_paste">Paste</string>
+    <string name="annot_menu_copy">Copy</string>
+
+    <string name="long_press_menu_stamp">Stamp</string>
+    <string name="long_press_menu_image">Image</string>
+
+    <string name="get_code_error">Sorry, page view open error!</string>
+    <string name="verify_license_error">Sorry, verify license error!</string>
+    <string name="open_buffer_error">Sorry, open file error!</string>
+    <string name="cannot_open_file">Sorry, can not open file!</string>
+    <string name="verify_key_empty_license">empty license</string>
+    <string name="verify_key_error_license">error license</string>
+    <string name="verify_key_error_rsamessage">RAS message error</string>
+    <string name="verify_key_error_rsamessage_type">RAS message error typee</string>
+    <string name="verify_key_error_rsamessage_expire">RAS message expire</string>
+    <string name="verify_key_error_rsamessage_applicationid">RAS message does not match the package name</string>
+    <string name="verify_key_error_rsamessage_module">Privilege level does not match</string>
+
+    <string name="settings_more_remove_bookmark_msg">Do you want to remove the previous bookmark?</string>
+    <string name="settings_more_remove_bookmark_success">Remove bookmark success!</string>
+    <string name="settings_more_remove_bookmark_fail">Remove bookmark failed!</string>
+
+    <string name="dialog_title_warning">Warning</string>
+
+    <string name="settings_more_add_bookmark">Add to Bookmark</string>
+    <string name="settings_more_remove_bookmark">Remove Bookmark</string>
+
+    <string name="reader_pdf_info_abstract">Abstract</string>
+
+    <string name="dialog_input_content">Please input content</string>
+    <string name="dialog_input_password">Please input password</string>
+    <string name="context_menu_no_edit">No Edit</string>
+
+    <string name="delete_page_warning">Are you sure to delete pages?</string>
+
+    <string name="page_edit_extracting">Extracting document&#8230;</string>
+    <string name="page_edit_rotating">Rotating document&#8230;</string>
+    <string name="page_edit_delete">Delete document&#8230;</string>
+
+    <string name="scan_i_know">Get It</string>
+    <string name="scan_drag_to_sort">Drag to Sort</string>
+    <string name="share_fail">Fail to share</string>
+</resources>

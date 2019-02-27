@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/id_bookmark_swipe_item_page"
+        android:layout_width="@dimen/qb_px_40"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/qb_px_16"
+        android:gravity="center"
+        android:textSize="@dimen/qb_px_14"
+        android:text= "1"/>
+    <TextView
+        android:id="@+id/id_bookmark_swipe_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/id_bookmark_swipe_item_page"
+        android:layout_marginTop="@dimen/qb_px_17"
+        android:textSize="@dimen/qb_px_16"
+        android:textColor="@color/theme_color_black"
+        android:text="ssdsdsadadasfff"/>
+    <TextView
+        android:id="@+id/id_bookmark_swipe_item_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/id_bookmark_swipe_item_page"
+        android:layout_marginTop="@dimen/qb_px_42"
+        android:textSize="@dimen/qb_px_14"
+        android:text="2018/04/12 13:34"/>
+
+</RelativeLayout>

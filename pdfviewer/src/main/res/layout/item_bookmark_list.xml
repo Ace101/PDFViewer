@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kdanmobile.pdfviewer.screenui.widget.SwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/qb_px_72"
+    app:autoHeight="false"
+    app:ios="true"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+    <include
+        android:id="@+id/id_item_bookmark_swipe"
+        layout="@layout/layout_bookmark_swipe_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_72"
+        android:layout_marginStart="@dimen/qb_px_16" />
+
+    <include layout="@layout/layout_bookmark_swipe_menu" />
+
+</com.kdanmobile.pdfviewer.screenui.widget.SwipeMenuLayout>

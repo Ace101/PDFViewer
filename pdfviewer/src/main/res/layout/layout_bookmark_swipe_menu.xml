@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/qb_px_72"
+    android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/id_bookmark_swipe_menu_rename"
+        android:layout_width="@dimen/qb_px_64"
+        android:layout_height="match_parent"
+        android:background="@color/color_setting_menu_item_bg"
+        android:src="@drawable/ic_rename"/>
+    <ImageButton
+        android:id="@+id/id_bookmark_swipe_menu_delete"
+        android:layout_width="@dimen/qb_px_64"
+        android:layout_height="match_parent"
+        android:background="@color/theme_color_red"
+        android:src="@drawable/ic_delete_white"/>
+
+</LinearLayout>

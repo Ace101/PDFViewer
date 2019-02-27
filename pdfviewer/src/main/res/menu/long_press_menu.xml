@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/stamp_create_text_text" />
+
+    <item
+        android:title="@string/annot_menu_paste" />
+
+    <item
+        android:title="@string/sign_annotation_title" />
+
+    <item
+        android:title="@string/long_press_menu_stamp" />
+
+    <item
+        android:title="@string/long_press_menu_image" />
+    <item
+        android:title="@string/annot_menu_link" />
+
+</menu>
